@@ -34,6 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navbar.contains(e.target) && navLinks.classList.contains('open')) {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+        }
+    });
+
     // --- Active nav link on scroll ---
     const sections = document.querySelectorAll('section[id], header[id]');
     const navItems = document.querySelectorAll('.nav-links a');
@@ -61,10 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
     setActiveNav();
 
     // --- Scroll reveal animations ---
-    const revealElements = document.querySelectorAll(
-        '.service-card, .env-card, .value-card, .contact-card, .about-text, .about-image, .env-highlight, .section-header'
-    );
+    const revealSelectors = [
+        '.service-card',
+        '.env-card',
+        '.value-card',
+        '.contact-card',
+        '.about-text',
+        '.about-structures',
+        '.env-highlight',
+        '.section-header',
+        '.residence-card',
+        '.wellness-item',
+        '.wellness-activity-card',
+        '.structure-item',
+        '.feder-banner'
+    ];
 
+    const revealElements = document.querySelectorAll(revealSelectors.join(', '));
     revealElements.forEach(el => el.classList.add('reveal'));
 
     const observer = new IntersectionObserver(
@@ -80,6 +101,52 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     revealElements.forEach(el => observer.observe(el));
+
+    // --- Hero badge counter animation ---
+    const badges = document.querySelectorAll('.hero-badge-number');
+    let badgesAnimated = false;
+
+    function animateCounters() {
+        if (badgesAnimated) return;
+        badgesAnimated = true;
+
+        badges.forEach(badge => {
+            const target = parseInt(badge.textContent, 10);
+            if (isNaN(target)) return;
+
+            let current = 0;
+            const increment = Math.max(1, Math.floor(target / 40));
+            const duration = 1200;
+            const stepTime = duration / (target / increment);
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    badge.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    badge.textContent = current;
+                }
+            }, stepTime);
+        });
+    }
+
+    const heroObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    heroObserver.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    const heroSection = document.querySelector('.hero-badges');
+    if (heroSection) {
+        heroObserver.observe(heroSection);
+    }
 
     // --- Smooth scroll for anchor links (fallback) ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
