@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Résidence Les Chèvrefeuilles – Maison de repos et de soins à Havré, près de Mons. Un cadre familial et chaleureux pour nos aînés depuis les années 80.">
+    <meta name="keywords" content="maison de repos, Havré, Mons, Hainaut, Les Chèvrefeuilles, résidence senior, soins, MRS, MRPA">
+    <title>Les Chèvrefeuilles — Maison de Repos et de Soins à Havré</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#accueil" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4C14 4 10 10 10 16c0 4 2 7 5 9-2 1-5 3-5 7h20c0-4-3-6-5-7 3-2 5-5 5-9 0-6-4-12-10-12z" fill="#5B8C5A" opacity="0.3"/>
+                    <path d="M20 6c-3 0-6 2-7 6s0 8 3 10M20 6c3 0 6 2 7 6s0 8-3 10" stroke="#5B8C5A" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M20 8v20" stroke="#5B8C5A" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="16" cy="14" r="2" fill="#D4A574" opacity="0.6"/>
+                    <circle cx="24" cy="14" r="2" fill="#D4A574" opacity="0.6"/>
+                </svg>
+                <span>Les Chèvrefeuilles</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#cadre">Cadre de vie</a></li>
+                <li><a href="#valeurs">Nos valeurs</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-subtitle">Maison de Repos et de Soins à Havré</p>
+            <h1 class="hero-title">Résidence<br><em>Les Chèvrefeuilles</em></h1>
+            <p class="hero-description">Un cadre familial et chaleureux pour nos aînés,<br>au cœur de Havré depuis les années 80.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Nous contacter</a>
+                <a href="#apropos" class="btn btn-outline">Découvrir</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#apropos" aria-label="Défiler vers le bas">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section section-about" id="apropos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Notre histoire</span>
+                <h2 class="section-title">Trois générations au service de vos proches</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">C'est au cœur d'Havré, près de Mons, entre la réserve Natura 2000 de Thieu et le bois du Rapois, à proximité du centre du village, que la maison de repos « Les Chèvrefeuilles » accueille depuis les années 80 les seniors de la région.</p>
+                    <p>Cette histoire se perpétue depuis <strong>3 générations</strong> au service des résidents. En plaçant l'humain au centre de l'attention, nous avons instauré une ambiance familiale au sein de nos différentes structures, adaptées en fonction des besoins de chacun.</p>
+                    <p>Notre résidence propose <strong>49 chambres</strong>, simples ou doubles, avec un équipement haut de gamme, réparties dans deux ailes. Dans un esprit familial et convivial, nos équipes assurent l'encadrement, les soins et l'accueil avec des prestations exclusives.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">49</span>
+                            <span class="stat-label">Chambres</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Générations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" rx="16" fill="#E8F0E8"/>
+                            <path d="M120 200 L160 140 L200 170 L260 110 L320 180 L320 260 L120 260Z" fill="#5B8C5A" opacity="0.2"/>
+                            <circle cx="280" cy="80" r="30" fill="#D4A574" opacity="0.3"/>
+                            <rect x="170" y="160" width="60" height="80" rx="4" fill="#5B8C5A" opacity="0.15"/>
+                            <rect x="180" y="170" width="15" height="20" rx="2" fill="#5B8C5A" opacity="0.25"/>
+                            <rect x="205" y="170" width="15" height="20" rx="2" fill="#5B8C5A" opacity="0.25"/>
+                            <rect x="190" y="210" width="20" height="30" rx="2" fill="#5B8C5A" opacity="0.25"/>
+                            <text x="200" y="280" text-anchor="middle" fill="#5B8C5A" font-size="14" font-family="Inter">Résidence Les Chèvrefeuilles</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos prestations</span>
+                <h2 class="section-title">Des services pensés pour le bien-être</h2>
+                <p class="section-description">Nous offrons un accompagnement complet et personnalisé pour garantir confort, sérénité et qualité de vie à chacun de nos résidents.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" fill="#F0F7F0"/>
+                            <path d="M16 30h16M18 22h12M20 18h8M24 14v4" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 34h20" stroke="#5B8C5A" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Restauration</h3>
+                    <p>Petit déjeuner servi en chambre ou au living. Repas de midi et du soir préparés avec soin dans nos restaurants.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" fill="#F0F7F0"/>
+                            <path d="M24 16v8l4 4" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="10" stroke="#5B8C5A" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Soins 24h/24</h3>
+                    <p>Nos équipes soignantes assurent un suivi médical continu et personnalisé, de jour comme de nuit.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" fill="#F0F7F0"/>
+                            <path d="M18 20a6 6 0 1 1 12 0c0 4-6 8-6 8s-6-4-6-8z" stroke="#5B8C5A" stroke-width="2" fill="none"/>
+                            <path d="M14 32c0-3 4-5 10-5s10 2 10 5" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Ergothérapie</h3>
+                    <p>Programme thérapeutique visant à maintenir ou améliorer l'autonomie et l'indépendance de chaque résident.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" fill="#F0F7F0"/>
+                            <path d="M16 28l4-8 4 4 4-6 4 10" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="14" y="18" width="20" height="14" rx="2" stroke="#5B8C5A" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Animations</h3>
+                    <p>Sorties culturelles, rencontres inter-générationnelles, gymnastique douce, ateliers créatifs et fêtes tout au long de l'année.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" fill="#F0F7F0"/>
+                            <path d="M20 32V20a4 4 0 0 1 8 0v12" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 26h16" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Sport & Relaxation</h3>
+                    <p>Salle de sport et salle de relaxation pour le bien-être physique et mental de nos résidents.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" fill="#F0F7F0"/>
+                            <rect x="16" y="18" width="16" height="14" rx="2" stroke="#5B8C5A" stroke-width="2" fill="none"/>
+                            <path d="M20 18v-2a4 4 0 0 1 8 0v2" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="22" y="22" width="4" height="6" rx="1" fill="#5B8C5A" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <h3>Chambres haut de gamme</h3>
+                    <p>49 chambres simples ou doubles, équipées avec soin, réparties dans deux ailes pour un confort optimal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environment Section -->
+    <section class="section section-environment" id="cadre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Un écrin de verdure</span>
+                <h2 class="section-title">Un cadre de vie exceptionnel</h2>
+            </div>
+            <div class="environment-content">
+                <div class="env-cards">
+                    <div class="env-card">
+                        <div class="env-card-icon">
+                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 4c-5 0-9 4-9 9 0 3 1 5 3 7l6 8 6-8c2-2 3-4 3-7 0-5-4-9-9-9z" fill="#5B8C5A" opacity="0.15" stroke="#5B8C5A" stroke-width="1.5"/>
+                                <circle cx="16" cy="13" r="3" stroke="#5B8C5A" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </div>
+                        <h4>Réserve Natura 2000</h4>
+                        <p>À proximité de la réserve naturelle de Thieu, un environnement préservé et paisible.</p>
+                    </div>
+                    <div class="env-card">
+                        <div class="env-card-icon">
+                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 24h16M10 24l2-6h8l2 6M16 8v4M12 12c0-2 2-4 4-4s4 2 4 4-2 4-4 4-4-2-4-4z" stroke="#5B8C5A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <path d="M16 4v2M10 6l1 2M22 6l-1 2M7 12h2M23 12h2" stroke="#D4A574" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h4>Jardins aménagés</h4>
+                        <p>Parcours santé, promenades au bord de l'étang, terrasse extérieure et tonnelle ombragée.</p>
+                    </div>
+                    <div class="env-card">
+                        <div class="env-card-icon">
+                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 26c4-2 6-8 10-8s6 6 10 8" stroke="#5B8C5A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <path d="M16 6c-2 0-4 2-4 5s2 6 4 8c2-2 4-5 4-8s-2-5-4-5z" fill="#5B8C5A" opacity="0.15" stroke="#5B8C5A" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <h4>Bois du Rapois</h4>
+                        <p>Un cadre boisé naturel qui entoure notre résidence pour des promenades ressourçantes.</p>
+                    </div>
+                </div>
+                <div class="env-highlight">
+                    <blockquote>
+                        <p>« Au cœur d'Havré, entre nature et village, un lieu de vie où il fait bon vieillir. »</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section section-values" id="valeurs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ce qui nous anime</span>
+                <h2 class="section-title">Nos valeurs fondamentales</h2>
+                <p class="section-description">L'humain au centre de tout ce que nous faisons.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-number">01</div>
+                    <h3>Solidarité</h3>
+                    <p>Nous croyons en l'entraide et en la force du collectif. Chaque membre de notre communauté peut compter sur le soutien des autres.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">02</div>
+                    <h3>Convivialité</h3>
+                    <p>Une atmosphère chaleureuse et familiale où chacun se sent chez soi. Les moments de partage rythment le quotidien.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">03</div>
+                    <h3>Souci des autres</h3>
+                    <p>L'attention portée à chaque résident est au cœur de notre mission. Nous adaptons nos services aux besoins individuels.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">04</div>
+                    <h3>Bien-être</h3>
+                    <p>Le bien-être physique, mental et social de nos aînés guide chacune de nos décisions et de nos actions quotidiennes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Prenez contact</span>
+                <h2 class="section-title">Nous sommes à votre écoute</h2>
+                <p class="section-description">N'hésitez pas à nous contacter pour toute question ou pour organiser une visite de notre résidence.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Rue du Boussoit, 52<br>7021 Havré</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:+3265873575">065 / 87 35 75</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@chevrefeuilles.be">info@chevrefeuilles.be</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#5B8C5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Visites</h4>
+                            <p>Sur rendez-vous<br>Du lundi au dimanche</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=3.9450%2C50.4650%2C3.9650%2C50.4750&layer=mapnik&marker=50.4700%2C3.9550"
+                            width="100%"
+                            height="100%"
+                            style="border:0; border-radius: 12px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            title="Localisation de la Résidence Les Chèvrefeuilles">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#accueil" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4C14 4 10 10 10 16c0 4 2 7 5 9-2 1-5 3-5 7h20c0-4-3-6-5-7 3-2 5-5 5-9 0-6-4-12-10-12z" fill="#5B8C5A" opacity="0.3"/>
+                            <path d="M20 6c-3 0-6 2-7 6s0 8 3 10M20 6c3 0 6 2 7 6s0 8-3 10" stroke="#5B8C5A" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M20 8v20" stroke="#5B8C5A" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span>Les Chèvrefeuilles</span>
+                    </a>
+                    <p>Maison de Repos et de Soins à Havré, près de Mons. Un cadre familial depuis les années 80.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#cadre">Cadre de vie</a></li>
+                        <li><a href="#valeurs">Nos valeurs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Rue du Boussoit, 52<br>7021 Havré</p>
+                    <p><a href="tel:+3265873575">065 / 87 35 75</a></p>
+                    <p><a href="mailto:info@chevrefeuilles.be">info@chevrefeuilles.be</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Résidence Les Chèvrefeuilles SA — Tous droits réservés</p>
+                <p class="footer-legal">TVA : BE0428584404 — Siège social : Rue de la Chênaie, 16 – 7000 Mons</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
